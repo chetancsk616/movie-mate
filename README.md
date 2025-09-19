@@ -100,9 +100,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername) - email@example.com
+Your Name - [@chetan srinivas](https://www.linkedin.com/in/chetancsk3000) - chetancsk3000@gmail.com
 
-Project Link: [https://github.com/yourusername/movie-mate](https://github.com/yourusername/movie-mate)
+Project Link: [https://github.com/chetancsk616/movie-mate](https://github.com/chetancsk616/movie-mate)
 
 ## Acknowledgments
 
