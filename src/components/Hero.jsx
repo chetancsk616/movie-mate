@@ -68,26 +68,27 @@ const Hero = () => {
       <div className="container">
         <div className="hero-content">
           <h1 ref={titleRef} className="hero-title glitch-text" data-text="Movie Mate">
-            Movie Mate
+            Kutikuppala Chetan Srinivas
           </h1>
           <p ref={subtitleRef} className="hero-subtitle">
-            The Ultimate Platform for Cinephiles
+            AI Engineer
           </p>
           <p ref={descriptionRef} className="hero-description">
-            Connect, watch, and discuss movies with fellow film enthusiasts. 
-            Stream together, debate classics, discover new releases, and immerse 
-            yourself in the world of cinema like never before.
+            I am deeply intrigued by Artificial Intelligence, IoT, Machine Learning,
+            and Data Science, with an innate drive to tackle intricate data challenges
+            and craft intelligent, scalable solutions. With hands-on expertise in Python,
+            R, TensorFlow, Scikit-learn, and NLP frameworks such as SpaCy and NLTK, I focus
+            on data refinement, exploratory analysis, predictive modeling, and intelligent automation.
           </p>
           <div ref={ctaRef} className="hero-cta">
-            <button className="btn btn-primary">Join the Community</button>
-            <button className="btn btn-secondary">Explore Features</button>
+            <button className="btn btn-primary">GitHub</button>
+            <button className="btn btn-secondary">LinkedIn</button>
           </div>
         </div>
         <div ref={visualRef} className="hero-visual">
           <div className="cinema-screens">
-            <div className="screen screen-1">🎬</div>
-            <div className="screen screen-2">🍿</div>
-            <div className="screen screen-3">🎭</div>
+            <div className="screen screen-1">🐙</div>
+            <div className="screen screen-2">💼</div>
           </div>
         </div>
       </div>
