@@ -15,7 +15,7 @@ const Header = () => {
     <header className="header" role="banner">
       <div className="container">
         <div className="nav-brand">
-          <h1>🎬 Movie Mate</h1>
+          <h1>Professional Portfolio</h1>
         </div>
         
         <button 
