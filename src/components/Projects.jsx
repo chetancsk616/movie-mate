@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Features = () => {
+const Projects = () => {
   const featuresRef = useRef(null);
   const headerRef = useRef(null);
   const cardsRef = useRef([]);
@@ -112,7 +112,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section id="features" className="features" ref={featuresRef}>
+    <section id="projects" className="features" ref={featuresRef}>
       <div className="container">
         <div ref={headerRef} className="section-header">
           <h2 className="section-title">Projects</h2>
@@ -143,4 +143,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Projects;

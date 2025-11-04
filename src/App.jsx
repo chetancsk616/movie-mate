@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
-import Features from './components/Features.jsx';
+import Projects from './components/Projects.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
-import Wexp from './components/Worxexp.jsx'
+import Wexp from './components/Workexp.jsx'
 
 import './styles/index.css';
 
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Features />
+        <Projects />
         <Wexp/>
         <About />
         <Contact />

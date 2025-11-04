@@ -112,7 +112,7 @@ const Wexp = () => {
   }, []);
 
   return (
-    <section id="features" className="features" ref={featuresRef}>
+    <section id="workexp" className="features" ref={featuresRef}>
       <div className="container">
         <div ref={headerRef} className="section-header">
           <h2 className="section-title">Work Experiance</h2>

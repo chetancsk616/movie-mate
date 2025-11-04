@@ -32,8 +32,8 @@ const Header = () => {
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`} role="navigation">
           <ul className="nav-list">
             <li><a href="#home" onClick={closeMenu}>Home</a></li>
-            <li><a href="#features" onClick={closeMenu}>Projects</a></li>
-            <li><a href="#about" onClick={closeMenu}>Work experiance</a></li>
+            <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+            <li><a href="#worxexp" onClick={closeMenu}>Work experiance</a></li>
             <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
           </ul>
         </nav>
