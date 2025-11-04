@@ -37,27 +37,6 @@ const Features = () => {
       description: "Test your film knowledge with trivia, quizzes, and movie-related games. Compete with others and earn rewards.",
       icon: "🎮",
       highlight: "Interactive Gaming"
-    },
-    {
-      id: 5,
-      title: "Debates",
-      description: "Engage in structured discussions about films, directors, and cinema themes. Share perspectives and learn from fellow movie lovers.",
-      icon: "🗣️",
-      highlight: "Intellectual Discussions"
-    },
-    {
-      id: 6,
-      title: "Movie News",
-      description: "Stay updated with the latest industry news, casting updates, film festivals, and box office trends.",
-      icon: "📰",
-      highlight: "Industry Updates"
-    },
-    {
-      id: 7,
-      title: "Exclusive Discounts",
-      description: "Get special discounts on movie tickets, film festival passes, and cinema-related events.",
-      icon: "🎟️",
-      highlight: "Member Benefits"
     }
   ];
 
@@ -136,9 +115,8 @@ const Features = () => {
     <section id="features" className="features" ref={featuresRef}>
       <div className="container">
         <div ref={headerRef} className="section-header">
-          <h2 className="section-title">Cinematic Features</h2>
+          <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
-            Everything a movie enthusiast needs in one platform
           </p>
         </div>
         
