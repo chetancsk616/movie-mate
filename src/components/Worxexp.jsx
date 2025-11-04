@@ -115,7 +115,7 @@ const Wexp = () => {
     <section id="features" className="features" ref={featuresRef}>
       <div className="container">
         <div ref={headerRef} className="section-header">
-          <h2 className="section-title">Projects</h2>
+          <h2 className="section-title">Work Experiance</h2>
           <p className="section-subtitle">
           </p>
         </div>
