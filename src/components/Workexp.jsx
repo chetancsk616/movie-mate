@@ -9,34 +9,42 @@ const Wexp = () => {
   const headerRef = useRef(null);
   const cardsRef = useRef([]);
 
-  const features = [
+  const experiences = [
     {
       id: 1,
-      title: "Stream Room",
-      description: "Watch movies together in real-time with friends and fellow cinephiles. Experience the communal joy of cinema from anywhere in the world.",
-      icon: "📺",
-      highlight: "Virtual Cinema Experience"
+      title: "Senior Software Engineer",
+      company: "Tech Innovators Inc.",
+      period: "2023 - Present",
+      description: "Led the development of scalable web applications using React and Node.js. Improved system performance by 40% through optimization techniques and modern architecture patterns.",
+      icon: "�",
+      highlight: "Full Stack Development"
     },
     {
       id: 2,
-      title: "Chat Room",
-      description: "Engage in passionate film discussions, share trivia, and debate your favorite movies with a community of film enthusiasts.",
-      icon: "💬",
-      highlight: "Real-time Discussions"
+      title: "Frontend Developer",
+      company: "Digital Solutions Ltd.",
+      period: "2021 - 2023",
+      description: "Developed responsive web applications using React, Redux, and TypeScript. Implemented CI/CD pipelines and reduced deployment time by 60%.",
+      icon: "⚛️",
+      highlight: "React Specialist"
     },
     {
       id: 3,
-      title: "OTT View",
-      description: "Discover and access content from multiple streaming platforms in one place. Never miss out on hidden gems or latest releases.",
-      icon: "📱",
-      highlight: "Unified Streaming"
+      title: "Software Developer",
+      company: "InnovateTech Solutions",
+      period: "2019 - 2021",
+      description: "Built and maintained multiple client-facing applications. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+      icon: "�",
+      highlight: "Web Development"
     },
     {
       id: 4,
-      title: "Game Competitions",
-      description: "Test your film knowledge with trivia, quizzes, and movie-related games. Compete with others and earn rewards.",
-      icon: "🎮",
-      highlight: "Interactive Gaming"
+      title: "Junior Developer",
+      company: "StartUp Ventures",
+      period: "2018 - 2019",
+      description: "Developed and maintained company websites and internal tools. Participated in code reviews and implemented best practices for code quality.",
+      icon: "🔧",
+      highlight: "Web Development"
     }
   ];
 
@@ -115,26 +123,28 @@ const Wexp = () => {
     <section id="workexp" className="features" ref={featuresRef}>
       <div className="container">
         <div ref={headerRef} className="section-header">
-          <h2 className="section-title">Work Experiance</h2>
+          <h2 className="section-title">Work Experience</h2>
           <p className="section-subtitle">
+            A timeline of my professional journey and achievements
           </p>
         </div>
         
         <div className="features-grid">
-          {features.map((feature, index) => (
+          {experiences.map((experience, index) => (
             <article 
-              key={feature.id} 
+              key={experience.id} 
               ref={el => cardsRef.current[index] = el}
               className="feature-card" 
               tabIndex="0"
             >
-              <div className="feature-icon">{feature.icon}</div>
-              <h3 className="feature-title">{feature.title}</h3>
-              <span className="feature-highlight">{feature.highlight}</span>
-              <p className="feature-description">{feature.description}</p>
-              <button className="feature-cta" aria-label={`Learn more about ${feature.title}`}>
-                Explore
-              </button>
+              <div className="feature-icon">{experience.icon}</div>
+              <div className="feature-header">
+                <h3 className="feature-title">{experience.title}</h3>
+                <span className="feature-company">{experience.company}</span>
+                <span className="feature-period">{experience.period}</span>
+              </div>
+              <span className="feature-highlight">{experience.highlight}</span>
+              <p className="feature-description">{experience.description}</p>
             </article>
           ))}
         </div>

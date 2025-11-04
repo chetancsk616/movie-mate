@@ -1,0 +1,131 @@
+.features {
+  padding: 5rem 0;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: #888;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.experience-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(229, 9, 20, 0.3);
+}
+
+.experience-card:focus {
+  outline: 2px solid #e50914;
+  outline-offset: 2px;
+}
+
+.experience-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #e50914;
+  display: inline-block;
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+}
+
+.experience-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.experience-company {
+  display: block;
+  font-size: 1.1rem;
+  color: #e50914;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.experience-period {
+  display: block;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.experience-highlight {
+  display: inline-block;
+  background: rgba(229, 9, 20, 0.1);
+  color: #e50914;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  border: 1px solid rgba(229, 9, 20, 0.3);
+}
+
+.experience-highlight:hover {
+  background: rgba(229, 9, 20, 0.15);
+}
+
+.experience-description {
+  color: #888;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .experience-card {
+    padding: 1.5rem;
+  }
+}

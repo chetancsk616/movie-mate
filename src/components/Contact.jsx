@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react';
+import { db } from '../firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -73,8 +75,10 @@ const Contact = () => {
     setErrors({});
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await addDoc(collection(db, "contacts"), {
+        ...formData,
+        timestamp: serverTimestamp(),
+      });
       
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
@@ -82,6 +86,7 @@ const Contact = () => {
       // Clear success message after 5 seconds
       setTimeout(() => setSubmitStatus(''), 5000);
     } catch (error) {
+      console.error("Error adding document: ", error);
       setSubmitStatus('error');
       setTimeout(() => setSubmitStatus(''), 5000);
     } finally {
