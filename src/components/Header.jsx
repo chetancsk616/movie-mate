@@ -33,7 +33,7 @@ const Header = () => {
           <ul className="nav-list">
             <li><a href="#home" onClick={closeMenu}>Home</a></li>
             <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-            <li><a href="#worxexp" onClick={closeMenu}>Work experiance</a></li>
+            <li><a href="#workexp" onClick={closeMenu}>Work experiance</a></li>
             <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
           </ul>
         </nav>
