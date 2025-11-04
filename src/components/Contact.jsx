@@ -93,34 +93,34 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Get in Touch</h2>
+          <h2 className="section-title">Let's Connect</h2>
           <p className="section-subtitle">
-            Join our community or share your feedback
+            share your feedback
           </p>
         </div>
 
         <div className="contact-content">
           <div className="contact-info">
-            <h3>Connect With Us</h3>
+            <h3>You can reach me at</h3>
             <div className="contact-item">
               <span className="contact-icon">📧</span>
               <div>
                 <strong>Email</strong>
-                <p>hello@moviemate.com</p>
+                <p>chetancsk3000@gmail.com</p>
               </div>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">💬</span>
+              <span className="contact-icon">📞</span>
               <div>
-                <strong>Community</strong>
-                <p>Join our Discord server</p>
+                <strong>Phone No</strong>
+                <p>+91 7569493772</p>
               </div>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">🐦</span>
+              <span className="contact-icon">💼</span>
               <div>
-                <strong>Social</strong>
-                <p>Follow us @MovieMate</p>
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/chetancsk3000" target="_blank">www.linkedin.com/in/chetancsk3000</a>
               </div>
             </div>
           </div>
@@ -189,9 +189,9 @@ const Contact = () => {
                 <option value="">Select a subject</option>
                 <option value="general">General Inquiry</option>
                 <option value="feedback">Feedback</option>
-                <option value="partnership">Partnership</option>
-                <option value="support">Technical Support</option>
-                <option value="press">Press Inquiry</option>
+                <option value="partnership">Collaborations</option>
+                <option value="support">Hiring</option>
+                <option value="press">Others</option>
               </select>
               {errors.subject && (
                 <span id="subject-error" className="error-message" role="alert">
