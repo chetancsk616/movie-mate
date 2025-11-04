@@ -5,6 +5,8 @@ import Features from './components/Features.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
+import Wexp from './components/Workxexp.jsx'
+
 import './styles/index.css';
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
       <main>
         <Hero />
         <Features />
+        <Wexp/>
         <About />
         <Contact />
       </main>
