@@ -19,9 +19,6 @@ const Footer = () => {
               <FaTwitter />
             </a>
           </div>
-          <p className="copyright">
-            &copy; {currentYear} Movie Mate. All Rights Reserved.
-          </p>
         </div>
       </div>
     </footer>
