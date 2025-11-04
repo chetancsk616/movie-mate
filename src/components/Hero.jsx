@@ -81,8 +81,18 @@ const Hero = () => {
             on data refinement, exploratory analysis, predictive modeling, and intelligent automation.
           </p>
           <div ref={ctaRef} className="hero-cta">
-            <button className="btn btn-primary">GitHub</button>
-            <button className="btn btn-secondary">LinkedIn</button>
+            <button
+              className="btn btn-primary"
+              onClick={() => window.open("https://github.com/chetancsk3000", "_blank")}
+            >
+              GitHub
+            </button>
+            <button
+              className="tn btn-secondary"
+              onClick={() => window.open("https://www.linkedin.com/in/chetancsk3000", "_blank")}
+            >
+              LinkedIn
+            </button>
           </div>
         </div>
         <div ref={visualRef} className="hero-visual">
