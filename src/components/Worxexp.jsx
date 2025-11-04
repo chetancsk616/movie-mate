@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Features = () => {
+const Wexp = () => {
   const featuresRef = useRef(null);
   const headerRef = useRef(null);
   const cardsRef = useRef([]);
@@ -143,4 +143,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Wexp;
