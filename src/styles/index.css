@@ -684,6 +684,7 @@ textarea.form-input {
 }
 
 select.form-input {
+  color: black;
   cursor: pointer;
 }
 
