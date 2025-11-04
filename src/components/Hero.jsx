@@ -88,7 +88,7 @@ const Hero = () => {
               GitHub
             </button>
             <button
-              className="tn btn-secondary"
+              className="btn btn-secondary"
               onClick={() => window.open("https://www.linkedin.com/in/chetancsk3000", "_blank")}
             >
               LinkedIn
