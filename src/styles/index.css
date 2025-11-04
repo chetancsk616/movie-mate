@@ -748,6 +748,7 @@ select.form-input {
 }
 
 .social-link {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
