@@ -120,7 +120,14 @@ const Contact = () => {
               <span className="contact-icon">💼</span>
               <div>
                 <strong>LinkedIn</strong>
-                <a href="https://www.linkedin.com/in/chetancsk3000" target="_blank">www.linkedin.com/in/chetancsk3000</a>
+                <a 
+                  href="https://www.linkedin.com/in/chetancsk3000" 
+                  target="_blank" 
+                  style="text-decoration: none; color: white;"
+                >
+                  www.linkedin.com/in/chetancsk3000
+                </a>
+
               </div>
             </div>
           </div>
