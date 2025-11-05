@@ -12,39 +12,21 @@ const Wexp = () => {
   const experiences = [
     {
       id: 1,
-      title: "Senior Software Engineer",
-      company: "Tech Innovators Inc.",
-      period: "2023 - Present",
-      description: "Led the development of scalable web applications using React and Node.js. Improved system performance by 40% through optimization techniques and modern architecture patterns.",
+      title: "AI Intern",
+      company: "Aarvasa",
+      period: "July 2025- Present",
+      description: "Led a team to enhance Aarvasa's Al chatbot by improving RAG pipeline efficiency, Groq API integration, and overall conversational accuracy - boosting reliability and response quality.",
       icon: "�",
-      highlight: "Full Stack Development"
+      highlight: "Gen AI"
     },
     {
       id: 2,
-      title: "Frontend Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2021 - 2023",
-      description: "Developed responsive web applications using React, Redux, and TypeScript. Implemented CI/CD pipelines and reduced deployment time by 60%.",
+      title: "Summer intern",
+      company: "TIFAC",
+      period: "June 2025- August 2025",
+      description: "Independently built a multilingual agricultural web app under TIFAC to help farmers access services like vehicle booking, pesticide purchase, and crop health advice - featuring real-time translation and voice interaction.",
       icon: "⚛️",
       highlight: "React Specialist"
-    },
-    {
-      id: 3,
-      title: "Software Developer",
-      company: "InnovateTech Solutions",
-      period: "2019 - 2021",
-      description: "Built and maintained multiple client-facing applications. Collaborated with cross-functional teams to deliver high-quality software solutions.",
-      icon: "�",
-      highlight: "Web Development"
-    },
-    {
-      id: 4,
-      title: "Junior Developer",
-      company: "StartUp Ventures",
-      period: "2018 - 2019",
-      description: "Developed and maintained company websites and internal tools. Participated in code reviews and implemented best practices for code quality.",
-      icon: "🔧",
-      highlight: "Web Development"
     }
   ];
 
