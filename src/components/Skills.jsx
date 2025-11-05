@@ -30,7 +30,7 @@ const Skills = () => {
       icon: "🛠️",
       skills: [
         { name: "Arduino", proficiency: 90 },
-        { name: "ESP32/8622", proficiency: 75 },
+        { name: "ESP32/8266", proficiency: 75 },
         { name: "Raspberry pi", proficiency: 70 },
         { name: "Oracle", proficiency: 80 },
         { name: "AWS", proficiency: 75 },
