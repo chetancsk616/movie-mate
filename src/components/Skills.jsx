@@ -12,29 +12,16 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      id: 3,
-      title: "Frontend and others",
-      icon: "🎨",
-      skills: [
-        { name: "React.js", proficiency: 95 },
-        { name: "JavaScript", proficiency: 90 },
-        { name: "HTML5/CSS3", proficiency: 85 },
-        { name: "R programming", proficiency: 90 },
-        { name: "C/C++", proficiency: 85 },
-        { name: "Java", proficiency: 80 }
-      ]
-    },
-    {
       id: 1,
-      title: "AI",
+      title: "AI & Deployment",
       icon: "⚙️",
       skills: [
         { name: "Python", proficiency: 85 },
-        { name: "NLP", proficiency: 80 },
-        { name: "OpenCV", proficiency: 75 },
-        { name: "Deep learning", proficiency: 80 },
+        { name: "NLP/ OpenCV", proficiency: 80 },
         { name: "Gen AI", proficiency: 75 },
-        { name: "Pytorch", proficiency: 90 }
+        { name: "Deep learning", proficiency: 80 },
+        { name: "Vercel/ Rnder", proficiency: 75 },
+        { name: "Supabase/ Firebase", proficiency: 90 }
       ]
     },
     {
@@ -48,6 +35,19 @@ const Skills = () => {
         { name: "Oracle", proficiency: 80 },
         { name: "AWS", proficiency: 75 },
         { name: "Google cloud", proficiency: 85 }
+      ]
+    },
+    {
+      id: 3,
+      title: "Frontend and others",
+      icon: "🎨",
+      skills: [
+        { name: "React.js", proficiency: 95 },
+        { name: "JavaScript", proficiency: 90 },
+        { name: "HTML5/CSS3", proficiency: 85 },
+        { name: "R programming", proficiency: 90 },
+        { name: "C/C++", proficiency: 85 },
+        { name: "Java", proficiency: 80 }
       ]
     },
     {
