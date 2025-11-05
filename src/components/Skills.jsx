@@ -12,42 +12,42 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      id: 1,
-      title: "Frontend Development",
+      id: 3,
+      title: "Frontend and others",
       icon: "🎨",
       skills: [
         { name: "React.js", proficiency: 95 },
         { name: "JavaScript", proficiency: 90 },
-        { name: "TypeScript", proficiency: 85 },
-        { name: "HTML5/CSS3", proficiency: 90 },
-        { name: "Redux", proficiency: 85 },
-        { name: "Next.js", proficiency: 80 }
+        { name: "HTML5/CSS3", proficiency: 85 },
+        { name: "R programming", proficiency: 90 },
+        { name: "C/C++", proficiency: 85 },
+        { name: "Java", proficiency: 80 }
+      ]
+    },
+    {
+      id: 1,
+      title: "AI",
+      icon: "⚙️",
+      skills: [
+        { name: "Python", proficiency: 85 },
+        { name: "NLP", proficiency: 80 },
+        { name: "OpenCV", proficiency: 75 },
+        { name: "Deep learning", proficiency: 80 },
+        { name: "Gen AI", proficiency: 75 },
+        { name: "Pytorch", proficiency: 90 }
       ]
     },
     {
       id: 2,
-      title: "Backend Development",
-      icon: "⚙️",
-      skills: [
-        { name: "Node.js", proficiency: 85 },
-        { name: "Express.js", proficiency: 80 },
-        { name: "Python", proficiency: 75 },
-        { name: "MongoDB", proficiency: 80 },
-        { name: "PostgreSQL", proficiency: 75 },
-        { name: "RESTful APIs", proficiency: 90 }
-      ]
-    },
-    {
-      id: 3,
-      title: "Tools & DevOps",
+      title: "Embided systems & Cloud",
       icon: "🛠️",
       skills: [
-        { name: "Git", proficiency: 90 },
-        { name: "Docker", proficiency: 75 },
-        { name: "AWS", proficiency: 70 },
-        { name: "CI/CD", proficiency: 80 },
-        { name: "Webpack", proficiency: 75 },
-        { name: "Jest", proficiency: 85 }
+        { name: "Arduino", proficiency: 90 },
+        { name: "ESP32/8622", proficiency: 75 },
+        { name: "Raspberry pi", proficiency: 70 },
+        { name: "Oracle", proficiency: 80 },
+        { name: "AWS", proficiency: 75 },
+        { name: "Google cloud", proficiency: 85 }
       ]
     },
     {
