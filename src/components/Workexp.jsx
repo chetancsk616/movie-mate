@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import aarvasaIcon from '../assets/work/aarvasa.png';
-import tifacIcon from '../assets/work/tifac.png';
+import aarvasaIcon from '../assets/aarvasa.png';
+import tifacIcon from '../assets/tifac.jpg';
 
 
 gsap.registerPlugin(ScrollTrigger);
