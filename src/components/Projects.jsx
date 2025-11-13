@@ -10,35 +10,36 @@ const Projects = () => {
   const cardsRef = useRef([]);
 
   const features = [
-    {
-      id: 1,
-      title: "Stream Room",
-      description: "Watch movies together in real-time with friends and fellow cinephiles. Experience the communal joy of cinema from anywhere in the world.",
-      icon: "📺",
-      highlight: "Virtual Cinema Experience"
-    },
-    {
-      id: 2,
-      title: "Chat Room",
-      description: "Engage in passionate film discussions, share trivia, and debate your favorite movies with a community of film enthusiasts.",
-      icon: "💬",
-      highlight: "Real-time Discussions"
-    },
-    {
-      id: 3,
-      title: "OTT View",
-      description: "Discover and access content from multiple streaming platforms in one place. Never miss out on hidden gems or latest releases.",
-      icon: "📱",
-      highlight: "Unified Streaming"
-    },
-    {
-      id: 4,
-      title: "Game Competitions",
-      description: "Test your film knowledge with trivia, quizzes, and movie-related games. Compete with others and earn rewards.",
-      icon: "🎮",
-      highlight: "Interactive Gaming"
-    }
-  ];
+  {
+    id: 1,
+    title: "AgroSmart",
+    description: "A farmer-assistance platform that offers pesticide and fertilizer recommendations, tractor booking, and multilingual support to enhance agricultural productivity.",
+    icon: "🌾",
+    highlight: "Smart Farming Platform"
+  },
+  {
+    id: 2,
+    title: "NutriTrack",
+    description: "An AI-powered nutrition prediction app that analyzes food data and provides health insights with daily tracking and Firebase history integration.",
+    icon: "🥗",
+    highlight: "AI Nutrition Tracker"
+  },
+  {
+    id: 3,
+    title: "Secure Locker for Adaptively Charging an Electronic Device",
+    description: "Patent No. 202541030598 · Issued May 2, 2025. This patented innovation introduces a biometric-secured locker that provides adaptive charging to electronic devices. It intelligently adjusts charging parameters, locks the device securely, and initiates charging based on stored biometric and device data.",
+    icon: "🔐",
+    highlight: "Patent Innovation"
+  },
+  {
+    id: 4,
+    title: "Solar and Field Automation System",
+    description: "A dual automation system consisting of an agricultural data logger for monitoring field conditions and a solar panel protection mechanism that automatically closes with a cleaning cloth during low light and reopens under sunlight, ensuring optimal energy generation and panel maintenance.",
+    icon: "☀️",
+    highlight: "Automation & Clean Energy"
+  }
+];
+
 
   useEffect(() => {
     // Animate section header
