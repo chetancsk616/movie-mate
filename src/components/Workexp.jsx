@@ -14,29 +14,28 @@ const Wexp = () => {
       id: 1,
       title: "AI Intern",
       company: "Aarvasa",
-      period: "July 2025- Present",
-      description: "Led a team to enhance Aarvasa's Al chatbot by improving RAG pipeline efficiency, Groq API integration, and overall conversational accuracy - boosting reliability and response quality.",
-      icon: "�",
+      period: "July 2025 - Present",
+      description:
+        "Led a team to enhance Aarvasa's AI chatbot by improving RAG pipeline efficiency, Groq API integration, and overall conversational accuracy — boosting reliability and response quality.",
+      icon: "/assets/aarvasa.png", // 🔹 your Aarvasa logo or image path
       highlight: "Gen AI"
     },
     {
       id: 2,
-      title: "Summer intern",
+      title: "Summer Intern",
       company: "TIFAC",
-      period: "June 2025- August 2025",
-      description: "Independently built a multilingual agricultural web app under TIFAC to help farmers access services like vehicle booking, pesticide purchase, and crop health advice - featuring real-time translation and voice interaction.",
-      icon: "⚛️",
+      period: "June 2025 - August 2025",
+      description:
+        "Independently built a multilingual agricultural web app under TIFAC to help farmers access services like vehicle booking, pesticide purchase, and crop health advice — featuring real-time translation and voice interaction.",
+      icon: "/assets/tifac.jpg", // 🔹 your TIFAC logo or image path
       highlight: "React Specialist"
     }
   ];
 
   useEffect(() => {
-    // Animate section header
-    gsap.fromTo(headerRef.current, 
-      { 
-        opacity: 0, 
-        y: 50 
-      },
+    gsap.fromTo(
+      headerRef.current,
+      { opacity: 0, y: 50 },
       {
         opacity: 1,
         y: 0,
@@ -51,15 +50,11 @@ const Wexp = () => {
       }
     );
 
-    // Animate feature cards
     cardsRef.current.forEach((card, index) => {
       if (card) {
-        gsap.fromTo(card, 
-          { 
-            opacity: 0, 
-            y: 50,
-            scale: 0.9
-          },
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 50, scale: 0.9 },
           {
             opacity: 1,
             y: 0,
@@ -76,28 +71,25 @@ const Wexp = () => {
           }
         );
 
-        // Hover animation
         const handleMouseEnter = () => {
           gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power2.out" });
         };
-
         const handleMouseLeave = () => {
           gsap.to(card, { scale: 1, duration: 0.3, ease: "power2.out" });
         };
 
-        card.addEventListener('mouseenter', handleMouseEnter);
-        card.addEventListener('mouseleave', handleMouseLeave);
+        card.addEventListener("mouseenter", handleMouseEnter);
+        card.addEventListener("mouseleave", handleMouseLeave);
 
-        // Cleanup
         return () => {
-          card.removeEventListener('mouseenter', handleMouseEnter);
-          card.removeEventListener('mouseleave', handleMouseLeave);
+          card.removeEventListener("mouseenter", handleMouseEnter);
+          card.removeEventListener("mouseleave", handleMouseLeave);
         };
       }
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
@@ -110,16 +102,22 @@ const Wexp = () => {
             A timeline of my professional journey and achievements
           </p>
         </div>
-        
+
         <div className="features-grid">
           {experiences.map((experience, index) => (
-            <article 
-              key={experience.id} 
-              ref={el => cardsRef.current[index] = el}
-              className="feature-card" 
+            <article
+              key={experience.id}
+              ref={(el) => (cardsRef.current[index] = el)}
+              className="feature-card"
               tabIndex="0"
             >
-              <div className="feature-icon">{experience.icon}</div>
+              <div className="feature-icon">
+                <img
+                  src={experience.icon}
+                  alt={`${experience.company} logo`}
+                  className="icon-img"
+                />
+              </div>
               <div className="feature-header">
                 <h3 className="feature-title">{experience.title}</h3>
                 <span className="feature-company">{experience.company}</span>
