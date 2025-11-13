@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import aarvasaIcon from '../assets/work/aarvasa.png';
+import tifacIcon from '../assets/work/tifac.png';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,27 +13,28 @@ const Wexp = () => {
   const cardsRef = useRef([]);
 
   const experiences = [
-    {
-      id: 1,
-      title: "AI Intern",
-      company: "Aarvasa",
-      period: "July 2025 - Present",
-      description:
-        "Led a team to enhance Aarvasa's AI chatbot by improving RAG pipeline efficiency, Groq API integration, and overall conversational accuracy — boosting reliability and response quality.",
-      icon: "/assets/aarvasa.png", // 🔹 your Aarvasa logo or image path
-      highlight: "Gen AI"
-    },
-    {
-      id: 2,
-      title: "Summer Intern",
-      company: "TIFAC",
-      period: "June 2025 - August 2025",
-      description:
-        "Independently built a multilingual agricultural web app under TIFAC to help farmers access services like vehicle booking, pesticide purchase, and crop health advice — featuring real-time translation and voice interaction.",
-      icon: "/assets/tifac.jpg", // 🔹 your TIFAC logo or image path
-      highlight: "React Specialist"
-    }
-  ];
+  {
+    id: 1,
+    title: "AI Intern",
+    company: "Aarvasa",
+    period: "July 2025 - Present",
+    description:
+      "Led a team to enhance Aarvasa's Al chatbot by improving RAG pipeline efficiency, Groq API integration, and overall conversational accuracy - boosting reliability and response quality.",
+    icon: aarvasaIcon,
+    highlight: "Gen AI"
+  },
+  {
+    id: 2,
+    title: "Summer Intern",
+    company: "TIFAC",
+    period: "June 2025 - August 2025",
+    description:
+      "Independently built a multilingual agricultural web app under TIFAC to help farmers access services like vehicle booking, pesticide purchase, and crop health advice - featuring real-time translation and voice interaction.",
+    icon: tifacIcon,
+    highlight: "React Specialist"
+  }
+];
+
 
   useEffect(() => {
     gsap.fromTo(
@@ -112,12 +116,9 @@ const Wexp = () => {
               tabIndex="0"
             >
               <div className="feature-icon">
-                <img
-                  src={experience.icon}
-                  alt={`${experience.company} logo`}
-                  className="icon-img"
-                />
+                <img src={experience.icon} alt={experience.company} className="w-16 h-16 object-contain mx-auto" />
               </div>
+
               <div className="feature-header">
                 <h3 className="feature-title">{experience.title}</h3>
                 <span className="feature-company">{experience.company}</span>
