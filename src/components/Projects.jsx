@@ -1,13 +1,28 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import './Projects.css'; // You'll add the styles below
 
 gsap.registerPlugin(ScrollTrigger);
+
+const Popup = ({ message, onClose }) => {
+  if (!message) return null;
+
+  return (
+    <div className="popup-overlay" onClick={onClose}>
+      <div className="popup-box" onClick={(e) => e.stopPropagation()}>
+        <p>{message}</p>
+        <button onClick={onClose}>OK</button>
+      </div>
+    </div>
+  );
+};
 
 const Projects = () => {
   const featuresRef = useRef(null);
   const headerRef = useRef(null);
   const cardsRef = useRef([]);
+  const [popupMessage, setPopupMessage] = useState('');
 
   const features = [
     {
@@ -49,7 +64,6 @@ const Projects = () => {
   ];
 
   useEffect(() => {
-    // Animate section header
     gsap.fromTo(
       headerRef.current,
       { opacity: 0, y: 50 },
@@ -67,7 +81,6 @@ const Projects = () => {
       }
     );
 
-    // Animate feature cards
     cardsRef.current.forEach((card, index) => {
       if (card) {
         gsap.fromTo(
@@ -89,23 +102,12 @@ const Projects = () => {
           }
         );
 
-        // Hover animation
-        const handleMouseEnter = () => {
-          gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power2.out" });
-        };
-
-        const handleMouseLeave = () => {
-          gsap.to(card, { scale: 1, duration: 0.3, ease: "power2.out" });
-        };
-
-        card.addEventListener("mouseenter", handleMouseEnter);
-        card.addEventListener("mouseleave", handleMouseLeave);
-
-        // Cleanup
-        return () => {
-          card.removeEventListener("mouseenter", handleMouseEnter);
-          card.removeEventListener("mouseleave", handleMouseLeave);
-        };
+        card.addEventListener("mouseenter", () =>
+          gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power2.out" })
+        );
+        card.addEventListener("mouseleave", () =>
+          gsap.to(card, { scale: 1, duration: 0.3, ease: "power2.out" })
+        );
       }
     });
 
@@ -119,7 +121,6 @@ const Projects = () => {
       <div className="container">
         <div ref={headerRef} className="section-header">
           <h2 className="section-title">Projects</h2>
-          <p className="section-subtitle"></p>
         </div>
 
         <div className="features-grid">
@@ -133,20 +134,39 @@ const Projects = () => {
               <div className="feature-icon">{feature.icon}</div>
               <h3 className="feature-title">{feature.title}</h3>
               <span className="feature-highlight">{feature.highlight}</span>
-              <p className="feature-description">{feature.description}</p>
-              <a
-                href={feature.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="feature-cta"
-                aria-label={`Learn more about ${feature.title}`}
-              >
-                Explore
-              </a>
+              
+              <p className="feature-description">
+                {feature.description.length > 120
+                  ? feature.description.substring(0, 120) + "..."
+                  : feature.description}
+              </p>
+
+              <div className="feature-actions">
+                {feature.description.length > 120 && (
+                  <button
+                    className="see-more-btn"
+                    onClick={() => setPopupMessage(feature.description)}
+                  >
+                    See More
+                  </button>
+                )}
+                {feature.link !== "-" && (
+                  <a
+                    href={feature.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="feature-cta"
+                  >
+                    Explore
+                  </a>
+                )}
+              </div>
             </article>
           ))}
         </div>
       </div>
+
+      <Popup message={popupMessage} onClose={() => setPopupMessage('')} />
     </section>
   );
 };
