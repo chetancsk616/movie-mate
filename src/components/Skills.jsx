@@ -26,7 +26,7 @@ const Skills = () => {
     },
     {
       id: 2,
-      title: "Embided systems & Cloud",
+      title: "Embedded systems & Cloud",
       icon: "🛠️",
       skills: [
         { name: "Arduino", proficiency: 90 },
