@@ -32,7 +32,7 @@ const Projects = () => {
         "A farmer-assistance platform that offers pesticide and fertilizer recommendations, tractor booking, and multilingual support to enhance agricultural productivity.",
       icon: "🌾",
       highlight: "Smart Farming Platform",
-      link: "https://agriservices.vercel.app/"
+      link: "https://agriservices.chetancsk3000.dev/"
     },
     {
       id: 2,
